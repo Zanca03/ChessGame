@@ -8,6 +8,13 @@ public class UI {
             System.out.print(8 - i + " ");
             for (int j = 0; j < pieces.length; j++){
                 printPiece(pieces[i][j]);
+
+                if (i == 1 && j == 7){
+                    System.out.print("   WHITE");
+                }
+                if (i == 6 && j == 7){
+                    System.out.print("   BLACK");
+                }
             }
             System.out.println();
         }
